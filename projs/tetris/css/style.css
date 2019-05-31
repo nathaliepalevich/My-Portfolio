@@ -1,0 +1,165 @@
+body, html{
+    background-color: black; 
+    color:white; 
+    text-align: center; 
+    height: 500px;
+    font-family: 'Courier New', Courier, monospace;
+}  
+
+.floor{
+    background-color: rgb(233, 229, 229);
+    opacity:1;
+    transition:opacity 1s linear;
+}
+
+.wall{
+    background-color: rgb(183, 184, 192);
+    box-shadow:  1px  1px 1px rgb(156, 128, 80);
+}
+
+.wall:hover{
+    background-color: rgb(156, 128, 80);
+}
+
+.best-player{
+
+    font-size: 14px;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.295);
+    position: relative;
+    margin-left: 100px;
+    float: left;
+    bottom: 420px;
+    color: aliceblue;
+
+}
+.cell{
+    width: 4%;
+    height: 10px; 
+}   
+
+.main-board{
+    position: relative;
+    width: 25%;
+    left: 35%;
+    background-color: rgb(233, 229, 229);
+    border-radius: 5px;
+}
+
+ .instructions {
+    font-size: 16px;
+    width: 300px;
+    background-color: rgba(255, 0, 0, 0.295);
+    position: relative;
+    margin-left: 50px;
+    float: left;
+    bottom: 565px;
+    color: aliceblue;
+
+  }
+
+.statistic{
+    background-color: rgba(255, 0, 0, 0.295);
+    float: right;
+    position: relative;
+    height: 400px;
+    bottom: 620px;
+    margin-right: 60px;
+    font-size: 20px;
+}    
+
+.statistic .time,
+.statistic .score{
+    background-color: rgba(143, 136, 136, 0.178);
+    margin: 10px;
+}    
+
+img{
+    height: 100px;
+    width: 300px;
+    margin: 2px 0;
+}
+
+.arrow{
+    padding: 10px;
+    margin: 10px 20px 0;
+    font-size:20px;
+    background-color: black;
+    position: relative;
+}    
+
+button{
+    color: aliceblue;
+}
+
+button:hover{
+    background-color: rgba(190, 207, 221, 0.37);
+    cursor: pointer;
+}    
+
+.next{
+    position: relative;
+    left: 34%;
+    background-color: transparent;
+    width: 100px;
+    height: 90px;
+}
+
+.next td{
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+.best-score, .inst{
+    padding: 6px;
+    font-size: 15px;
+    background-color: black;
+    position: relative;
+}
+.pause{
+    padding: 7px;
+    width: 100px;
+    font-size: 15px;
+    background-color: black;
+    position: relative;
+}
+
+.modal{
+    color: rgba(240, 248, 255, 0.568);
+    font-size: 25px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.295);
+    position: relative;
+    left: 31%;;
+    bottom: 400px;
+}    
+
+.hide{
+    visibility: hidden;
+}  
+
+
+.play{
+    padding: 10px;
+    font-size: 30px;
+    background-color: rgba(240, 248, 255, 0.568);;
+    color: rgba(21, 22, 22, 0.568);;
+    position: relative;
+}     
+
+h4{
+    margin: 0;
+}
+
+.disappear{
+    transition-duration: 1s;
+    transition-property: background-color; 
+    opacity:1;
+}
+
+.full-cell{
+border-radius: 2px;
+box-shadow:  1px  1px 1px rgba(0,0,0,0.7);
+}
+

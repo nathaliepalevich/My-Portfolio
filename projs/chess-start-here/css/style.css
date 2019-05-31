@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    text-align: center;
+    background-image: url("../images/chess.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #bbd5f7;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 50px;
+    padding-top: 20px;
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+.black {
+    background-color: #6a482f93;
+}
+.white {
+    background-color:#9b7648b9;
+}
+
+.selected {
+    outline: 2px solid azure;
+}
+
+.mark {
+    outline: 2px solid chartreuse;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.game-board td {
+    width: 100px;
+    height:100px;
+    text-align: center;
+    font-size:1.4em;
+}
+
+button {
+    background-color: #cddff6;
+    color: white;
+    padding: 7px 4px;
+    border: 2px solid #55555559;
+    margin: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color:  #a7c9f7;
+  }

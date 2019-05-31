@@ -1,0 +1,121 @@
+*{
+    margin: auto;
+    /* background-color: rgb(245, 245, 220); */
+    text-align: center;
+    font-family: fantasy;
+}
+
+ html{
+    background-image: url("../images/tapet1.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.level-bar{
+    width: 500px;
+}
+ul{
+    list-style-type: decimal;
+    padding: 0;
+    text-align: center;
+}
+span{
+    font-size: 18px;
+}
+li{
+  display: inline; 
+  margin: 5%;
+  font-size: 30px;
+}
+
+li:hover{
+    color: chocolate;
+}
+
+.status-bar > table {
+    width: 50%;
+    height: 70px;
+    border: none;
+}
+
+th{
+    position: relative;
+    width: 100px;
+    height: 20px;
+    font-size: 40px;
+   
+}
+
+.mood > img{
+    height: 100px;
+    width: 150px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+
+.clicked{
+    background-color: rgba(128, 128, 128, 0.233);
+}
+
+
+table{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+ td{
+    width: 24px;
+    height: 26px;
+    background-color: gray;
+    box-shadow: 0 8px 6px -6px black;
+    padding: 5px;
+    margin: 10px;
+}
+
+td:hover{
+    background-color: rgba(165, 157, 157, 0.699);
+
+}
+
+._1{
+    color: rgb(0, 0, 206);
+}
+
+._2{
+    color: rgb(2, 94, 2);
+}
+
+._3{
+    color: rgb(190, 5, 5);
+}
+
+._4{
+    color: darkblue;
+}
+
+.yellow{
+    background-color: rgba(255, 255, 0, 0.356);
+}
+
+.red{
+    background-color: rgb(190, 5, 5);
+}
+
+.clue-box img {
+width: 40px;
+height: 40px;
+margin: 1px;
+/* border: 2px double saddlebrown; */
+
+}
+
+h2{
+    font-size: 30px;
+    display: inline-block;
+}
+
+.clue{
+background-color: red;
+}

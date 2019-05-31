@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Mine Sweeper</title>
+</head>
+
+<body onload="initGame()">
+
+        <div class="status-bar">
+            <table border="1" >
+                <tr>
+                    <th class="mine">2</th>
+                    <th onclick="initGame()" class="mood" ><img src="./images/smi.png" ></th>
+                    <th class="time">00:00</th>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="level-bar">
+                <ul>
+                    <li onclick="level(this)">beginner</li>
+                    <span class="beginner">best time:</span><br>
+                    <li onclick="level(this)">medium</li>
+                    <span class="medium">best time:</span><br>
+                    <li onclick="level(this)">expert</li>
+                     <span class="expert">best time:</span>
+                </ul>
+            </div>
+        <div class="main-board"></div>
+<div class="clue-box">
+    <h2>HINT:</h2>
+    <img src="images/clue.png" alt="Magnifying Glass" onclick="clue(this)">
+    <img src="images/clue.png" alt="Magnifying Glass" onclick="clue(this)">
+    <img src="images/clue.png" alt="Magnifying Glass" onclick="clue(this)">
+
+</div>
+   
+        <script src="js/time.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

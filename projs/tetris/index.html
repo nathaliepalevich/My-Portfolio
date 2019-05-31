@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/128/705/705873.png" />
+    <title>Tetris</title>
+</head>
+
+<body onload="initGame()" onkeydown="handleKey(event)">
+    <h1><img src="https://www.tetriseffect.game/wp-content/uploads/2018/05/splash_logo-06.png" alt="Tetris title"></h1>
+
+    <div class="board"></div>
+    <div class="best-player hide"></div>
+    <div class="modal hide"></div>
+    <div class="instructions hide"></div>
+    <div class="statistic">
+        <h4>NEXT:</h4>
+        <div class="next-shape"></div>
+        <button  onclick="ShowBestScore()" class="best-score">BEST SCORE</button>
+        <button  onclick="instructionsModal()" class="inst">INSTRUCTIONS</button>
+        <button onclick="pause()" class="pause">PAUSE</button>
+        <div class="time">TIME:</div>
+        <div class="score">SCORE:</div>
+
+        <button class="arrow" onclick="rotate()">▲</button><br>
+        <button class="arrow" onclick="moveLeft()">◀</button>
+        <button class="arrow" onclick="moveRight()">▶</button><br>
+        <button class="arrow" onclick="drop()">▼</button>
+  </div>
+    <script src="js/controls.js"></script>
+    <script src="js/rotate.js"></script>
+    <script src="js/best-score.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/time.js"></script>
+</body>
+
+</html>
