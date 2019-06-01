@@ -17,7 +17,7 @@ a.active, a:active, a:focus, a:hover {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: 'major-mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -194,8 +194,8 @@ body {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 90%;
-    font-weight: 400;
+    font-size: 1.25rem;
+    font-weight: 600;
     padding: 0.75em 0;
     letter-spacing: 1px;
     color: #bfd3c4;
@@ -256,7 +256,8 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-    padding-top: 168px;
+    font-family:  'major-mono';
+    padding-top: 240px;
     padding-bottom: 100px;
 }
 
@@ -265,7 +266,7 @@ header.masthead .intro-text .intro-lead-in {
     line-height: 22px;
     margin-bottom: 25px;
     margin-top: 20px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
 
 header.masthead .intro-text .intro-heading {
@@ -278,21 +279,21 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
     header.masthead .intro-text {
-        padding-top: 155px;
+        padding-top: 216px;
         padding-bottom: 200px;
     }
     header.masthead .intro-text .intro-lead-in {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 40px;
         margin-bottom: 25px;
-        font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: 'major-mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     header.masthead .intro-text .intro-heading {
         font-size: 2rem;
         line-height: 75px;
         margin-bottom: 50px;
-        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
+        font-family: 'major-mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
     }
 }
 
@@ -881,4 +882,9 @@ footer {
     background-position: top;
     background-position-y: 206px;
     color: white;
+}
+
+@font-face {
+    font-family: "major-mono";
+    src: url("../fonts/MajorMonoDisplay-Regular.ttf");
 }

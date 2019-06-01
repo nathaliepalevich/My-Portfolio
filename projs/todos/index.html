@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/note-icon.png">
+    <title>Todos</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    
+    <div class="wrap-all">
+            <select onchange="onSetLang(this.value)">
+                    <option value="en">English</option>
+                    <option value="he">עברית</option>
+                </select>
+    <section class="header-container">
+        <h1  data-trans="title">Todo:</h1>
+        <input type="text" class="mission" placeholder="Add todo...." autofocus />
+        <select class="importance">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <button data-trans="add" class="add-botton" onclick="onAddTodo()">Add Todo</button><br />
+    </section>
+    <section class="container">
+        <div class="manage-todos">
+            <section class="filter-container">
+
+                <button data-trans="filter-all" class="filter-botton" onclick="onSetFilter(this.innerText)">All</button>
+                <button data-trans="filter-active" class="filter-botton" onclick="onSetFilter(this.innerText)">Active</button>
+                <button data-trans="filter-done" class="filter-botton" onclick="onSetFilter(this.innerText)">Completed</button>
+       
+                <select onchange="onSetSort(this.value)" >
+                
+                    <option data-trans="sort-by">Sort By</option>
+                    <option data-trans="sort-by-txt">Text</option>
+                    <option data-trans="sort-by-created">Created</option>
+                    <option data-trans="sort-by-importance">Importance</option>
+                </select>
+            </section>
+        </div>
+
+        <ul class="todo-list">
+        </ul>
+    </section>
+<hr>
+    <section class="stats-container">
+        <h3 >
+           <span data-trans="stat-todo-label"> Total todos: </span><span class="total-count"></span>
+           <span data-trans="stat-active-label">Active: </span>  <span class="active-count"></span>
+        </h3>
+    </section>
+</div>
+    </div>
+    <script src="js/util-service.js"></script>
+    <script src="js/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+    <script src="js/trans.js"></script>
+</body>
+
+</html>

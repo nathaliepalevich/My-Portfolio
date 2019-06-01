@@ -1,0 +1,158 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'major-mono';
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+body {
+    height: 100vh;
+    background-image: url('../images/todo.jpg');
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+
+li, li span {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2 {
+    font-size: 3rem;
+    display: inline-block;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+select, input, select, li {
+    font-size: 1.25rem;
+    padding: 0.3125rem;
+    margin: 0.3125rem;
+}
+
+.wrap-all {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: aliceblue;
+}
+
+.header-container {
+    margin-top: 50px;
+}
+
+.manage-todos {
+    display: flex;
+}
+
+.filter-container {
+    width: 100%;
+}
+
+.add-botton {
+    border: 1px solid white;
+    color: aliceblue;
+    width: 90px;
+    padding: 5px;
+}
+
+.filter-botton {
+    border: 1px solid white;
+    color: aliceblue;
+    width: 90px;
+    padding: 5px;
+    margin: 50px 5px;
+}
+
+img {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+button:hover {
+    cursor: grab;
+    box-shadow: 0 5px 16px 0 white(0, 0, 0, 0.24);
+}
+
+hr {
+    border: 4px solid aliceblue;
+}
+
+.todo-list li {
+    list-style-type: none;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.stats-container {
+    max-width: 100%;
+    height: 15%;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+.todo-container {
+    max-width: 100%;
+    height: 15%;
+}
+
+.arrow-color {
+    background-color: rgba(223, 25, 25, 0.712);
+}
+
+input[type=text] {
+    color: red;
+    border: none;
+    border-bottom: 3px solid aliceblue;
+    background-color: transparent;
+}
+
+input[type=placeholder] {
+    color: red;
+    border: none;
+    border-bottom: 3px solid aliceblue;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    color: aliceblue;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+select:hover {
+    background: black;
+    box-sizing: border-box;
+}
+
+/*  Helper */
+
+.red {
+    background: rgba(255, 0, 0, 0.322);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "major-mono";
+    src: url("../fonts/MajorMonoDisplay-Regular.ttf");
+}
