@@ -54,14 +54,12 @@ function renderModal(idx) {
                     <h2>${proj.name}</h2>
                     <p class=${proj.desc}</p>
                     <img class="img-fluid d-block mx-auto" src=${proj.url} alt="">
-                    <p>${proj.desc}/p>
+                    <p>${proj.desc}</p>
                     <ul class="list-inline">
                       <li>${proj.publishedAt}</li>
-                      <li>Client: Finish</li>
-                      <li>Category: Identity</li>
                     </ul>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Check it Out</button>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
+                    <button onclick="goToProj(this.id)" id="${proj.link}" class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Check it Out</button>
+
                   </div>
                 </div>
               </div>
@@ -79,4 +77,8 @@ var $subject = $('#subject').val()
 var $message = $('#message').val()
 
     window.open(`https://mail.google.com/mail/u/0/?view=cm&fs=1&to=nathaliepalevich@gmail.com&su=${$subject}&body=${$message}`);
+}
+
+function goToProj(link){
+  window.open(link)
 }

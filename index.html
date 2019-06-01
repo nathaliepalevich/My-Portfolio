@@ -27,9 +27,7 @@
 </head>
 
 <body id="page-top">
-  <div class="offcanvas-btn" onClick="openCanvas()">
-    <i class="fa fa-comment" aria-hidden="true"></i>
-  </div>
+
   <aside class="offcanvas-aside f">
 
     <!-- Contact -->
@@ -37,15 +35,15 @@
       <h4>Contact Me</h4>
       <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <!-- <label for="exampleInputEmail1">Email address</label> -->
           <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
         </div>
         <div class="form-group">
-          <label for="exampleInputSubject">Subject</label>
+          <!-- <label for="exampleInputSubject">Subject</label> -->
           <input type="subject" class="form-control" id="subject" placeholder="subject">
         </div>
         <div class="form-group">
-          <label for="exampleInputMessage1">Message</label>
+          <!-- <label for="exampleInputMessage1">Message</label> -->
           <input type="message" class="form-control" id="message" placeholder="Message">
         </div>
         <button type="button" onclick="onSubmit(event)" class="btn btn-primary">Submit</button>
@@ -57,11 +55,14 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
+        <div class="offcanvas-btn" onClick="openCanvas()">
+            <i class="fa fa-comment" aria-hidden="true"></i>
+          </div>
       <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a> -->
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars hamburger"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -83,7 +84,7 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead">
+  <header class="masthead img-fluid">
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Welcome To my Portfolio</div>
@@ -158,7 +159,7 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="team-member">
-          <img class="mx-auto rounded-circle" src="img/team/profile_pic.jpg" alt="Nathalie picture">
+          <img class="mx-auto rounded-circle " src="img/team/profile_pic.jpg" alt="Nathalie picture">
           <h4>Nathalie Palevich</h4>
           <p class="text-muted">Front-End Developer</p>
               </a>

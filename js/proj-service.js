@@ -2,7 +2,7 @@
 
 var gProjs;
 
-function createProj(id, name, title, desc, url, publishedAt,labels ) {
+function createProj(id, name, title, desc, url, publishedAt,labels,link ) {
     return {
         id,
         name,
@@ -11,16 +11,17 @@ function createProj(id, name, title, desc, url, publishedAt,labels ) {
         url,
         publishedAt,
         labels,
+        link
     }
 }
 
 function createProjects() {
     gProjs = [
-        createProj('tetris', 'Tetris', 'Complete this rows', 'lorem ipsum lorem ipsum lorem ipsum','img/portfolio/tetris.png' ,  1448693940000, ['Matrixes', 'keyboard events']),
-        createProj('mine-sweeper', 'Mine-Sweeper', `Don't step on mines`, 'lorem ipsum lorem ipsum lorem ipsum', 'img/portfolio/mine-sweeper.png'   ,  1448693940000, ['Matrixes', 'keyboard events']),
-        createProj('sokoban', 'Sokoban', 'Better push those boxes', 'lorem ipsum lorem ipsum lorem ipsum','img/portfolio/sokoban.png'  ,  1448693940000, ['Matrixes', 'keyboard events']),
-        createProj('day12-pacman', 'pacman', 'Watch out from ghosts', 'lorem ipsum lorem ipsum lorem ipsum','img/portfolio/pacman.png'  ,  1448693940000, ['Matrixes', 'keyboard events']),
-        createProj('chess-start-here', 'chess', 'Watch out from ghosts', 'lorem ipsum lorem ipsum lorem ipsum','img/portfolio/chess.png'  ,  1448693940000, ['Matrixes', 'keyboard events'])
+        createProj('tetris', 'Tetris', 'Complete this rows', '','img/portfolio/tetris.png' ,  '1/5/2019', ['Matrixes', 'keyboard events'], 'https://nathaliepalevich.github.io/My-Portfolio/projs/tetris/index.html'),
+        createProj('mine-sweeper', 'Mine-Sweeper', `Don't step on mines`, '', 'img/portfolio/mine-sweeper.png'   ,  '20/2/2019', ['Matrixes', 'keyboard events'], 'https://nathaliepalevich.github.io/My-Portfolio/projs/mine-sweeper/index.html'),
+        createProj('sokoban', 'Sokoban', 'Better push those boxes', '','img/portfolio/sokoban.png'  ,  '19/5/2019', ['Matrixes', 'keyboard events'], 'https://nathaliepalevich.github.io/My-Portfolio/projs/sokoban/index.html'),
+        createProj('day12-pacman', 'pacman', 'Watch out from ghosts', '','img/portfolio/pacman.png'  ,  '17/5/2019', ['Matrixes', 'keyboard events'], 'https://nathaliepalevich.github.io/My-Portfolio/projs/day12-pacman/index.html'),
+        createProj('chess-start-here', 'chess', 'Watch out from ghosts', '','img/portfolio/chess.png'  ,  '14/5/2019', ['Matrixes', 'keyboard events'], 'https://nathaliepalevich.github.io/My-Portfolio/projs/chess-start-here/index.html')
     ]
 }
 function getProjs(){

@@ -1,9 +1,6 @@
-
-
 body {
-
     overflow-x: hidden;
-    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -40,7 +37,35 @@ section h3.section-subheading {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.contact{
+    padding-top: 60px;
+}
+
+.form-group input{
+    background-color: transparent;
+    border: none;
+    border-bottom: black solid 2px;
+    padding-bottom: 0;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+.submit{
+color: white;
+}
+
+.hamburger{
+    color: black;
+}
+.hamburger:hover{
+    cursor: context-menu;
+}
+
+.navbar-nav  {
+    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -78,9 +103,9 @@ body {
 
 .offcanvas-btn {
     z-index: 1001;
-    position: fixed;
-    top: 4%;
-    left: 3%;
+    /* position: fixed; */
+    /* top: 4%;
+    left: 3%; */
     height: 40px;
     width: 40px;
     background: #bfd3c4;
@@ -147,11 +172,15 @@ body {
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color:  #bfd3c4;
+    color: #bfd3c4;
     border: 0;
     background-color: #bfd3c4;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+}
+
+.navbar-toggler:hover, i:hover{
+    cursor: pointer;
 }
 
 #mainNav .navbar-brand {
@@ -161,7 +190,7 @@ body {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color:  #bfd3c4;
+    color: #bfd3c4;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -175,7 +204,7 @@ body {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color:  #ffe9c2;
+    color: #ffe9c2;
 }
 
 @media (min-width: 992px) {
@@ -202,19 +231,16 @@ body {
         padding-top: 0;
         padding-bottom: 0;
         background-color: #222222;
-   
     }
-    #mainNav.navbar-shrink .navbar-brand{
+    #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
-
     }
 }
 
-
 header.masthead {
     height: 100vh;
-
+    width: 100%;
     text-align: center;
     color: white;
     background-image: url("../img/backgrounds/mac.jpg");
@@ -236,16 +262,14 @@ header.masthead .intro-text {
 
 header.masthead .intro-text .intro-lead-in {
     font-size: 22px;
-    font-style: italic;
     line-height: 22px;
     margin-bottom: 25px;
     margin-top: 20px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .intro-text .intro-heading {
     font-size: 24px;
-    font-weight: 700;
     line-height: 50px;
     margin-bottom: 25px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -258,15 +282,13 @@ header.masthead .intro-text .intro-heading {
         padding-bottom: 200px;
     }
     header.masthead .intro-text .intro-lead-in {
-        font-size: 45px;
-        font-style: italic;
+        font-size: 2.5rem;
         line-height: 40px;
         margin-bottom: 25px;
-        font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family:'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     header.masthead .intro-text .intro-heading {
-        font-size: 36px;
-        font-weight: 700;
+        font-size: 2rem;
         line-height: 75px;
         margin-bottom: 50px;
         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -356,6 +378,10 @@ header.masthead .intro-text .intro-heading {
     }
 }
 
+.modal-body button {
+    color: #222222;
+    border: none;
+}
 .portfolio-modal .modal-dialog {
     max-width: none;
     height: 100%;
@@ -363,8 +389,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content {
+    height: 100vh;
     min-height: 100%;
-    padding: 100px 0;
+    padding: 2.1875rem 0;
     text-align: center;
     border: none;
     border-radius: 0;
@@ -386,7 +413,7 @@ header.masthead .intro-text .intro-heading {
     font-size: 16px;
     font-style: italic;
     margin: 20px 0 30px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -722,7 +749,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     font-weight: 700;
     color: white;
     border-color: #bfd3c4;
-    background-color: #bfd3c4;
+    background-color: transparent;
+    border: 1px solid black;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
@@ -734,6 +762,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .btn-primary:hover {
+    cursor: pointer;
     color: white;
     border-color: #bfd3c4;
     background-color: #bfd3c4;
@@ -846,9 +875,10 @@ footer {
     background-color: #d6e4e7;
 }
 
-#aside {
+.offcanvas-aside {
     background-image: url("../img/backgrounds/thanks.jpg");
     background-size: cover;
     background-position: top;
-    color: white
+    background-position-y: 206px;
+    color: white;
 }
