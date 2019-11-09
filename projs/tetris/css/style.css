@@ -1,165 +1,159 @@
-body, html{
-    background-color: black; 
-    color:white; 
-    text-align: center; 
-    height: 500px;
-    font-family: 'Courier New', Courier, monospace;
-}  
-
-.floor{
-    background-color: rgb(233, 229, 229);
-    opacity:1;
-    transition:opacity 1s linear;
+body,
+html {
+  background-color: black;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.wall{
-    background-color: rgb(183, 184, 192);
-    box-shadow:  1px  1px 1px rgb(156, 128, 80);
+button {
+  border: none;
+}
+.board {
+  width: 40%;
+}
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  height: 75vh;
+}
+.floor {
+  background-color: rgb(233, 229, 229);
+  opacity: 1;
+  transition: opacity 1s linear;
 }
 
-.wall:hover{
-    background-color: rgb(156, 128, 80);
+.wall {
+  background-color: rgb(183, 184, 192);
+  box-shadow: 1px 1px 1px rgb(156, 128, 80);
 }
 
-.best-player{
-
-    font-size: 14px;
-    width: 200px;
-    background-color: rgba(255, 0, 0, 0.295);
-    position: relative;
-    margin-left: 100px;
-    float: left;
-    bottom: 420px;
-    color: aliceblue;
-
-}
-.cell{
-    width: 4%;
-    height: 10px; 
-}   
-
-.main-board{
-    position: relative;
-    width: 25%;
-    left: 35%;
-    background-color: rgb(233, 229, 229);
-    border-radius: 5px;
+.wall:hover {
+  background-color: rgb(156, 128, 80);
 }
 
- .instructions {
-    font-size: 16px;
-    width: 300px;
-    background-color: rgba(255, 0, 0, 0.295);
-    position: relative;
-    margin-left: 50px;
-    float: left;
-    bottom: 565px;
-    color: aliceblue;
+.best-player {
+  font-size: 14px;
+  width: 200px;
+  background-color: darkcyan;
+  position: absolute;
+  margin-left: 100px;
+  top: 80px;
+  left: -80px;
+}
+.cell {
+  width: 4%;
+  height: 10px;
+}
 
-  }
+.main-board {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  background-color: rgb(233, 229, 229);
+  border-radius: 5px;
+}
 
-.statistic{
-    background-color: rgba(255, 0, 0, 0.295);
-    float: right;
-    position: relative;
-    height: 400px;
-    bottom: 620px;
-    margin-right: 60px;
-    font-size: 20px;
-}    
+.instructions {
+  font-size: 16px;
+  background-color: darkcyan;
+  width: 20%;
+}
+
+.statistic {
+  background-color: darkcyan;
+  width: 20%;
+  height: 100%;
+  font-size: 20px;
+}
 
 .statistic .time,
-.statistic .score{
-    background-color: rgba(143, 136, 136, 0.178);
-    margin: 10px;
-}    
-
-img{
-    height: 100px;
-    width: 300px;
-    margin: 2px 0;
+.statistic .score {
+  background-color: #73b3b3;
+  margin: 10px;
 }
 
-.arrow{
-    padding: 10px;
-    margin: 10px 20px 0;
-    font-size:20px;
-    background-color: black;
-    position: relative;
-}    
-
-button{
-    color: aliceblue;
+img {
+  height: 100px;
+  width: 300px;
+  margin: 2px 0;
 }
 
-button:hover{
-    background-color: rgba(190, 207, 221, 0.37);
-    cursor: pointer;
-}    
-
-.next{
-    position: relative;
-    left: 34%;
-    background-color: transparent;
-    width: 100px;
-    height: 90px;
+.arrow {
+  padding: 10px;
+  margin: 10px 20px 0;
+  font-size: 20px;
+  background-color: #73b3b3;
+  position: relative;
 }
 
-.next td{
-    border-radius: 2px;
-    background-color: transparent;
+button:hover {
+  background-color: rgba(190, 207, 221, 0.37);
+  cursor: pointer;
+}
+.next-shape {
+  display: flex;
+  justify-content: center;
+}
+.next {
+  position: relative;
+  background-color: transparent;
+  width: 100px;
+  height: 90px;
 }
 
-.best-score, .inst{
-    padding: 6px;
-    font-size: 15px;
-    background-color: black;
-    position: relative;
-}
-.pause{
-    padding: 7px;
-    width: 100px;
-    font-size: 15px;
-    background-color: black;
-    position: relative;
+.next td {
+  border-radius: 2px;
+  background-color: transparent;
 }
 
-.modal{
-    color: rgba(240, 248, 255, 0.568);
-    font-size: 25px;
-    width: 400px;
-    height: 200px;
-    background-color: rgba(255, 0, 0, 0.295);
-    position: relative;
-    left: 31%;;
-    bottom: 400px;
-}    
-
-.hide{
-    visibility: hidden;
-}  
-
-
-.play{
-    padding: 10px;
-    font-size: 30px;
-    background-color: rgba(240, 248, 255, 0.568);;
-    color: rgba(21, 22, 22, 0.568);;
-    position: relative;
-}     
-
-h4{
-    margin: 0;
+.best-score,
+.inst {
+  padding: 6px;
+  font-size: 15px;
+  background-color: #73b3b3;
+  position: relative;
+}
+.pause {
+  padding: 7px;
+  width: 100px;
+  font-size: 15px;
+  background-color: #73b3b3;
+  position: relative;
 }
 
-.disappear{
-    transition-duration: 1s;
-    transition-property: background-color; 
-    opacity:1;
+.modal {
+  color: rgba(240, 248, 255, 0.568);
+  font-size: 25px;
+  width: 400px;
+  height: 200px;
+  align-items: center;
+  background-color: darkcyan;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
-.full-cell{
-border-radius: 2px;
-box-shadow:  1px  1px 1px rgba(0,0,0,0.7);
+.hide {
+  display: none;
 }
 
+.play {
+  padding: 10px;
+  background-color: #73b3b3;
+  color: rgba(21, 22, 22, 0.568);
+}
+
+h4 {
+  margin: 0;
+}
+
+.disappear {
+  transition-duration: 1s;
+  transition-property: background-color;
+  opacity: 1;
+}
+
+.full-cell {
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}

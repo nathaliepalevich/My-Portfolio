@@ -12,25 +12,43 @@
 
 <body onload="initGame()" onkeydown="handleKey(event)">
     <h1><img src="https://www.tetriseffect.game/wp-content/uploads/2018/05/splash_logo-06.png" alt="Tetris title"></h1>
+    <div class="game-container">
+        <div class="instructions">
+            <span style="color: yellow; bolder">Instructions Tetris Classic </span><br>
+            <span style="color: red; ">Goal</span><br>
+            You have to make full horizontal lines with the different shaped blocks that fall into the game area.<br>
+            Full lines will then disappear and provide points. <br>
 
-    <div class="board"></div>
-    <div class="best-player hide"></div>
-    <div class="modal hide"></div>
-    <div class="instructions hide"></div>
-    <div class="statistic">
-        <h4>NEXT:</h4>
-        <div class="next-shape"></div>
-        <button  onclick="ShowBestScore()" class="best-score">BEST SCORE</button>
-        <button  onclick="instructionsModal()" class="inst">INSTRUCTIONS</button>
-        <button onclick="pause()" class="pause">PAUSE</button>
-        <div class="time">TIME:</div>
-        <div class="score">SCORE:</div>
+            Score calculation<br>
+            1 line: 100 points<br>
 
-        <button class="arrow" onclick="rotate()">▲</button><br>
-        <button class="arrow" onclick="moveLeft()">◀</button>
-        <button class="arrow" onclick="moveRight()">▶</button><br>
-        <button class="arrow" onclick="drop()">▼</button>
-  </div>
+            <span style="color: red;"><br>Controls</span>
+            <br><span>Left arrow key:</span> move block to the left
+            <br> Right arrow key: move block to the right
+            <br>Down arrow key: move block down
+            <br>Up arrow key: rotate block clockwise
+        </div>
+        <div class="board"></div>
+        <div class="best-player hide"></div>
+        <div class="modal hide"></div>
+        <div class="statistic">
+            <h4>NEXT:</h4>
+            <div class="next-shape"></div>
+            <button onclick="ShowBestScore()" class="best-score">BEST SCORE</button>
+            <!-- <button onclick="instructionsModal()" class="inst">INSTRUCTIONS</button> -->
+            <button onclick="pause()" class="pause">PAUSE</button>
+            <div class="time">TIME:</div>
+            <div class="score">SCORE:</div>
+            <div class="btn-container">
+
+                <button class="arrow" onclick="rotate()">▲</button><br>
+                <button class="arrow" onclick="moveLeft()">◀</button>
+                <button class="arrow" onclick="moveRight()">▶</button><br>
+                <button class="arrow" onclick="drop()">▼</button>
+            </div>
+        </div>
+    </div>
+
     <script src="js/controls.js"></script>
     <script src="js/rotate.js"></script>
     <script src="js/best-score.js"></script>

@@ -33,8 +33,8 @@ function initGame() {
     gEmptyBoard = true
     gFirstShape = true
     gGame = { gameOn: true, fullRow: 0, paused: false, instructionsIsShown: false }
-    var elinst = document.querySelector('.instructions')
-    elinst .classList.add('hide')
+    // var elinst = document.querySelector('.instructions')
+    // elinst .classList.add('hide')
     var elModal = document.querySelector('.modal')
     elModal.classList.add('hide')
     gBoard = createBoard()
@@ -240,7 +240,7 @@ function openModal() {
 
 function pause() {
     var pause = document.querySelector('.pause')
-    if(!gGame.gameOn || gGame.instructionsIsShown) return
+    if(!gGame.gameOn ) return
     if (!gGame.paused) {
         gGame.paused = true
         clearInterval(gStopShape)
